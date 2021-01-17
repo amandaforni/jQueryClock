@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What time is it?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="clock.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>What time is it?</h1>
+        </header>
+        <h2 id="time"></h2>
+        <h2 id="date"></h2>
+    </div>
+    <div class="fullClock">
+    <!--Animated clock- CSS and JS-->
+    <article class="clock">
+        <div class="hours-container">
+            <div class="hours"></div>
+        </div>
+        <div class="minutes-container">
+            <div class="minutes"></div>
+        </div>
+        <div class="seconds-container">
+            <div class="seconds"></div>
+        </div>
+    </article>
+    <!--article tag makes for a self-contained feature and implies it can be taken out and moved elsewhere and still work-->
+</div>
+</body>
+
+<script>
+    $('#time').html(`${h}:${min}`);
+    $('#date').html(`${d} of ${m}, ${y}`);
+</script>
+
+</html>
